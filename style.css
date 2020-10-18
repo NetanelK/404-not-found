@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@600&family=Space+Mono:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Space Mono';
+    /* position: relative; */
+    color: #333333;
+}
+
+h3 {
+    font: 700 24px 'Inconsolata';
+    letter-spacing: -0.08em;
+    margin: .75em 0 3em 1em;
+    text-transform: uppercase;
+}
+
+img {
+    display: block;
+    max-width: 76%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    margin: 1em 0 .5em .5em;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 1.833em 0 1.333em;
+    letter-spacing: -0.035em;
+}
+
+button {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.035em;
+
+    color: white;
+
+    position: relative;
+    margin: 4.78571429em 0 0 1.71428571em;
+    padding: 1.71428571em 3em;
+    text-transform: uppercase;
+
+
+    background-size: 200% 100%;
+    background-image: linear-gradient(to left, #2B254E 50%,#333333 50%);
+    transition: background-position 1s;
+
+    cursor: pointer;
+}
+
+button:hover{
+    background-position: -100% 0;
+}
+
+span {
+    font: 600 14px 'Montserrat';
+    display: block;
+    width: fit-content;
+    left: 50%;
+    margin: 3em auto 2em auto;
+}
+
+@media (min-width: 750px){
+    .flex-container{
+        display: flex;
+        margin-top: 8em;
+        /* justify-content: space-; */
+    }
+
+    h3 {
+        margin: 1.66666667em 3.20833333em;
+    }
+
+    img {
+        width: 539.22px;
+        height: 447.43px;
+
+        /* margin: 0 auto; */
+        /* position: relative; */
+        /* left: 50%; */
+        transform: translate(0, 15%);
+        /* margin-right: 7em; */
+    }
+
+    .content {
+        width: 50%;
+    }
+
+    h1{
+        font-size: 64px;
+        max-width: 700px;
+    }
+
+    p {
+        font-size: 24px;
+        max-width: 375px;
+    }
+
+    button {
+        margin-left: 2.25em;
+    }
+
+    span {
+        position: absolute;
+        bottom: 0;
+        transform: translate(-50%, 0);
+    }
+}
